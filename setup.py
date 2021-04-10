@@ -31,7 +31,7 @@ setup(
     test_suite='setup.test_suite',
     install_requires=[
         'ply',
-        'pyparsing<=1.5.7;python_version<="2.8"',
+        'pyparsing<=1.5.7;python_version>="3.6"',
         'rdflib',
         'six',
         'enum34',
@@ -39,7 +39,7 @@ setup(
         'pyyaml',
         'xmltodict',
     ],
-    python_requires='>=2.7',
+    python_requires='>=3.6',
     entry_points={
         'console_scripts': [
             'convertor = spdx.cli_tools.convertor:main',
